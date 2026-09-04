@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Economy Tool — CS2 team economy companion</title>
+  <meta name="description" content="Economy Tool is a Counter-Strike 2 companion for Full Buy, Force Buy, Eco, safe-drop decisions, player economy roles, enemy economy estimates, and AI-ready match prompts.">
+  <link rel="canonical" href="https://albericod.github.io/economy-tool/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Economy Tool — CS2 team economy companion">
+  <meta property="og:description" content="Turn CS2 team money into clear buy calls, safe drops, player roles, enemy economy estimates, and match prompts.">
+  <meta property="og:url" content="https://albericod.github.io/economy-tool/">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Economy Tool",
+        "url": "https://albericod.github.io/economy-tool/",
+        "downloadUrl": "https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool",
+        "sameAs": ["https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"],
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows",
+        "isAccessibleForFree": true,
+        "description": "Counter-Strike 2 economy companion for team buy calls, safe drops, player economy roles, enemy economy estimates, and AI-ready match prompts.",
+        "author": {"@type": "Person", "name": "Albérico Dias Barreto Filho", "url": "https://albericod.github.io/"},
+        "about": {"@type": "VideoGame", "name": "Counter-Strike 2"},
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "What does Economy Tool do in CS2?", "acceptedAnswer": {"@type": "Answer", "text": "Economy Tool turns available team money and round context into readable team economy calls such as Full Buy, Buy With Drops, Force Buy, Eco, and Mixed Buy, plus player-level drop and save roles."}},
+          {"@type": "Question", "name": "Does Economy Tool recommend safe drops?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Safe-drop calculations consider current money, side-specific buy costs, loss bonus, and a user-defined reserve buffer so a player can help a teammate without unnecessarily damaging the next-round economy."}},
+          {"@type": "Question", "name": "Where can I download Economy Tool?", "acceptedAnswer": {"@type": "Answer", "text": "The official Windows version is distributed through the Overwolf Store."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Albérico Dias</a>
+      <nav aria-label="Primary navigation">
+        <a href="/deeprivals/">DeepRivals</a>
+        <a href="/roblox-backpack-tracker/">Roblox Backpack Tracker</a>
+        <a href="/economy-tool/">Economy Tool</a>
+        <a href="/fortmapp/">Fortmapp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Counter-Strike 2 economy companion</p>
+        <h1>Economy Tool</h1>
+        <p class="lead">A focused CS2 companion that turns raw team money into fast economy decisions: Full Buy, Force Buy, Eco, safe drops, player roles, enemy economy estimates, and AI-ready match prompts.</p>
+        <div class="actions">
+          <a class="button primary" href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool?utm_source=albericod.github.io&utm_medium=referral&utm_campaign=economy_tool">Get Economy Tool on Overwolf</a>
+          <a class="button" href="/">All apps</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container content-grid">
+        <article class="prose">
+          <section>
+            <p class="eyebrow">What it does</p>
+            <h2>Make the economy call before freeze time ends</h2>
+            <p>Economy Tool is built around one job: help a CS2 player understand the current or latest economy state within a few seconds. It complements the game HUD rather than trying to replace it.</p>
+          </section>
+
+          <section>
+            <h2>Core features</h2>
+            <ul>
+              <li><strong>Team economy state:</strong> surface Full Buy, Buy With Drops, Force Buy, Eco, or Mixed Buy based on the available match state.</li>
+              <li><strong>Player-level roles:</strong> identify players who can safely drop, are already covered for a buy, should save, or are in an eco state.</li>
+              <li><strong>Safe-drop logic:</strong> estimate how much a player can spend helping teammates while preserving the configured next-round reserve.</li>
+              <li><strong>Side-aware buy costs:</strong> account for the fact that CT and T full-buy costs differ.</li>
+              <li><strong>Loss-bonus context:</strong> incorporate round-economy context when estimating what the next round may look like.</li>
+              <li><strong>Enemy economy estimation:</strong> provide a simple readable enemy-economy state based on available loss-streak evidence instead of pretending to know exact money.</li>
+              <li><strong>Adjustable risk profile:</strong> let the user choose how conservative or aggressive the reserve buffer should be.</li>
+              <li><strong>AI-ready prompts:</strong> format current or saved match context for analysis in LLM tools such as ChatGPT or Gemini.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Why use it instead of mental math?</h2>
+            <p>CS2 economy decisions are time-sensitive and team-dependent. The app keeps the logic consistent across rounds, makes drop responsibilities more visible, and reduces the amount of arithmetic the player has to do during freeze time.</p>
+          </section>
+
+          <section>
+            <h2>Designed to avoid fake precision</h2>
+            <p>Enemy economy is presented as an estimate based on evidence the app can actually observe, not as invented exact balances. The same principle applies throughout the product: live and saved match evidence stays more important than decorative explanation.</p>
+          </section>
+
+          <section class="faq">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common questions</h2>
+            <details open>
+              <summary>What does Economy Tool do in CS2?</summary>
+              <p>It turns available team money and round context into readable buy calls, player economy roles, safe-drop guidance, and a simple enemy-economy estimate.</p>
+            </details>
+            <details>
+              <summary>Does it tell me who should drop?</summary>
+              <p>Yes. Player-level logic can distinguish who can safely help, who already has enough for the intended buy, and who still needs help.</p>
+            </details>
+            <details>
+              <summary>How does safe-drop logic work?</summary>
+              <p>It considers current money, the expected cost of the next buy, loss-bonus context, and a configurable reserve buffer. The goal is to help a teammate without unnecessarily breaking your own next-round economy.</p>
+            </details>
+            <details>
+              <summary>Does it know the enemy team's exact money?</summary>
+              <p>No. The enemy side is treated as an estimate based on available round evidence. The app deliberately avoids presenting unsupported exact values.</p>
+            </details>
+            <details>
+              <summary>Where is the official download?</summary>
+              <p>The official public build is distributed through the Overwolf Store.</p>
+            </details>
+          </section>
+        </article>
+
+        <aside class="fact-box" aria-label="Economy Tool facts">
+          <dl>
+            <dt>Game</dt><dd>Counter-Strike 2</dd>
+            <dt>Platform</dt><dd>Windows / Overwolf</dd>
+            <dt>Category</dt><dd>Team economy and buy decision support</dd>
+            <dt>Key concepts</dt><dd>Full Buy, Force Buy, Eco, safe drops, reserve buffer, enemy economy</dd>
+            <dt>Developer</dt><dd>Albérico Dias Barreto Filho</dd>
+            <dt>Official listing</dt><dd><a href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool">Overwolf Store</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Economy Tool is an independent companion app. Counter-Strike 2 and related trademarks belong to their respective owners.</div>
+  </footer>
+</body>
+</html>
