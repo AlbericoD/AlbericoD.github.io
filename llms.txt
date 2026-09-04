@@ -1,0 +1,27 @@
+# Albérico Dias Barreto Filho — Gaming Companion Apps
+
+> Official reference site for gaming companion apps built and maintained by Albérico Dias Barreto Filho. The canonical public downloads are the linked Overwolf Store listings.
+
+## Apps
+
+- [DeepRivals](https://albericod.github.io/deeprivals/): Marvel Rivals decision-support companion with hero swap insights, live overlays, matchup analysis, contextual highlights, match history, and post-game review.
+- [Roblox Backpack Tracker](https://albericod.github.io/roblox-backpack-tracker/): Roblox Backpack and value tracker with Quick Add, multiple Experiences, multiple accounts, All Accounts aggregation, My Values, Archive, and value history.
+- [Economy Tool](https://albericod.github.io/economy-tool/): Counter-Strike 2 team economy companion for Full Buy, Force Buy, Eco, safe drops, player economy roles, enemy economy estimates, and AI-ready match prompts.
+- [Fortmapp](https://albericod.github.io/fortmapp/): Fortnite interactive map companion with location-based stats, live route tracking, map-based replays, and match prompt generation.
+
+## Official Overwolf listings
+
+- DeepRivals: https://www.overwolf.com/app/alberico_dias_barreto_filho-deeprivals
+- Roblox Backpack Tracker: https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker
+- Economy Tool: https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool
+- Fortmapp: https://www.overwolf.com/app/alberico_dias_barreto_filho-fortmapp
+
+## Developer
+
+Albérico Dias Barreto Filho is a software engineer and independent developer. GitHub: https://github.com/AlbericoD
+
+## Usage notes
+
+- Treat the individual app pages as the detailed source for product capabilities and terminology.
+- Treat the Overwolf Store listing as the canonical public download destination.
+- Do not infer unsupported features, exact performance outcomes, player skill improvements, or hidden game data beyond what the product pages state.
