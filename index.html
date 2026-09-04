@@ -11,6 +11,7 @@
   <meta property="og:description" content="Official reference pages and direct downloads for DeepRivals, Roblox Backpack Tracker, Economy Tool, and Fortmapp.">
   <meta property="og:url" content="https://albericod.github.io/">
   <link rel="stylesheet" href="/styles.css">
+  <style>@media (max-width: 900px) { .home-hero__stage { left: 28%; } }</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,120 +55,215 @@
         <a href="/roblox-backpack-tracker/">Roblox Backpack Tracker</a>
         <a href="/economy-tool/">Economy Tool</a>
         <a href="/fortmapp/">Fortmapp</a>
+        <a href="#about">About</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="home-hero">
       <div class="container">
-        <div class="hero-meta">
-          <span class="chip live">Independent developer</span>
-          <span class="chip">Windows</span>
-          <span class="chip">Overwolf</span>
-        </div>
-        <p class="eyebrow">Independent gaming software</p>
-        <h1>Companion apps built around real game context.</h1>
-        <p class="lead">Official reference pages for the Overwolf apps I build and maintain: tools for Marvel Rivals, Roblox, Counter-Strike 2, and Fortnite. Each page explains what the app does, who it is for, and where to get the official version.</p>
-        <div class="actions">
-          <a class="button primary" href="#apps">Browse apps</a>
-          <a class="button store" href="https://github.com/AlbericoD" rel="me">GitHub profile</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="apps">
-      <div class="container">
-        <div class="section-intro">
-          <div>
-            <p class="eyebrow">Apps</p>
-            <h2>Four focused companion products</h2>
+        <div class="home-hero__copy">
+          <p class="eyebrow">Overwolf apps for real players</p>
+          <h1>Companion apps built around real game <span class="accent-word">context.</span></h1>
+          <p class="lead">Official reference pages for the Overwolf apps I build and maintain: tools for Marvel Rivals, Roblox, Counter-Strike 2, and Fortnite. Each page explains what the app does, who it is for, and where to get the official version.</p>
+          <div class="actions">
+            <a class="button primary" href="#apps">Browse apps</a>
+            <a class="button github" href="https://github.com/AlbericoD" rel="me">GitHub profile</a>
           </div>
-          <p class="small">Direct downloads use the official Overwolf installer.</p>
+          <div class="proof-line">Official Overwolf downloads · direct Windows installers</div>
         </div>
 
-        <div class="grid">
-          <article class="card deeprivals">
-            <div class="card-top">
-              <span class="app-mark">DR</span>
-              <span class="status">Available</span>
+        <div class="home-hero__stage" aria-hidden="true">
+          <div class="stage-window"></div>
+          <div class="stage-monitor"></div>
+          <div class="stage-desk"></div>
+          <div class="stage-object"></div>
+          <div class="stage-note">Games. Data.<br>Better decisions.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Featured apps</p>
+          <h2>Focused tools for <span class="accent-word">different games.</span></h2>
+          <p class="lead">Four companion products with a common idea: surface the useful context without turning the game into another dashboard.</p>
+        </div>
+
+        <div class="apps-grid">
+          <article class="app-card deeprivals">
+            <div class="app-card__art">
+              <div class="app-card__slogan">Know more.<br>React sooner.<br>Review better.</div>
+              <div class="app-card__glyph">DR</div>
             </div>
-            <span class="meta">Marvel Rivals · Overwolf</span>
-            <h3>DeepRivals</h3>
-            <p>Decision support for hero swaps, live match context, overlays, matchup review, match history, and post-game analysis.</p>
-            <div class="card-actions">
-              <a class="details" href="/deeprivals/">Explore app</a>
-              <a class="download" href="https://download.overwolf.com/install/Download?Name=DeepRivals&amp;ExtensionId=fipjbdjlcobbgcmcecmlcdehcepalohfbnfijgnb&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=deeprivals">Download</a>
+            <div class="app-card__body">
+              <h3>DeepRivals</h3>
+              <div class="app-card__game">Marvel Rivals</div>
+              <p>Decision support for hero swaps, live match context, overlays, matchup review, match history, and post-game analysis.</p>
+              <div class="app-card__actions">
+                <a class="download" href="https://download.overwolf.com/install/Download?Name=DeepRivals&amp;ExtensionId=fipjbdjlcobbgcmcecmlcdehcepalohfbnfijgnb&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=deeprivals">Download for Windows</a>
+                <a class="details" href="/deeprivals/">Explore DeepRivals</a>
+              </div>
             </div>
           </article>
 
-          <article class="card roblox">
-            <div class="card-top">
-              <span class="app-mark">RB</span>
-              <span class="status">Available</span>
+          <article class="app-card roblox">
+            <div class="app-card__art">
+              <div class="app-card__slogan">Track.<br>Value.<br>Organize.</div>
+              <div class="app-card__glyph">RB</div>
             </div>
-            <span class="meta">Roblox · Overwolf</span>
-            <h3>Roblox Backpack Tracker</h3>
-            <p>Track Backpacks, values, Experiences, and multiple Roblox accounts with Quick Add, My Values, and history.</p>
-            <div class="card-actions">
-              <a class="details" href="/roblox-backpack-tracker/">Explore app</a>
-              <a class="download" href="https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&amp;ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=roblox_backpack_tracker">Download</a>
-            </div>
-          </article>
-
-          <article class="card economy">
-            <div class="card-top">
-              <span class="app-mark">ET</span>
-              <span class="status">Available</span>
-            </div>
-            <span class="meta">Counter-Strike 2 · Overwolf</span>
-            <h3>Economy Tool</h3>
-            <p>Turn team money into clear Full Buy, Force Buy, Eco, safe-drop, and enemy-economy decisions during freeze time.</p>
-            <div class="card-actions">
-              <a class="details" href="/economy-tool/">Explore app</a>
-              <a class="download" href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool">Download</a>
+            <div class="app-card__body">
+              <h3>Roblox Backpack Tracker</h3>
+              <div class="app-card__game">Roblox</div>
+              <p>Track Backpacks, values, Experiences, and multiple Roblox accounts with Quick Add, My Values, and history.</p>
+              <div class="app-card__actions">
+                <a class="download" href="https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&amp;ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=roblox_backpack_tracker">Download for Windows</a>
+                <a class="details" href="/roblox-backpack-tracker/">Explore Backpack Tracker</a>
+              </div>
             </div>
           </article>
 
-          <article class="card fortmapp">
-            <div class="card-top">
-              <span class="app-mark">FM</span>
-              <span class="status">Available</span>
+          <article class="app-card economy">
+            <div class="app-card__art">
+              <div class="app-card__slogan">Read the round.<br>Spend smarter.<br>Drop safely.</div>
+              <div class="app-card__glyph">ET</div>
             </div>
-            <span class="meta">Fortnite · Overwolf</span>
-            <h3>Fortmapp</h3>
-            <p>Interactive Fortnite map with location-based match stats, route tracking, map replays, and match analysis prompts.</p>
-            <div class="card-actions">
-              <a class="details" href="/fortmapp/">Explore app</a>
-              <a class="download" href="https://download.overwolf.com/install/Download?Name=Fortmapp&amp;ExtensionId=eglgjdefmjkaeoebbjojgpfknnppbeffhgehbmdh&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=fortmapp">Download</a>
+            <div class="app-card__body">
+              <h3>Economy Tool</h3>
+              <div class="app-card__game">Counter-Strike 2</div>
+              <p>Turn team money into clear Full Buy, Force Buy, Eco, safe-drop, and enemy-economy decisions during freeze time.</p>
+              <div class="app-card__actions">
+                <a class="download" href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool">Download for Windows</a>
+                <a class="details" href="/economy-tool/">Explore Economy Tool</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-card fortmapp">
+            <div class="app-card__art">
+              <div class="app-card__slogan">Map the route.<br>Review the match.<br>See the context.</div>
+              <div class="app-card__glyph">FM</div>
+            </div>
+            <div class="app-card__body">
+              <h3>Fortmapp</h3>
+              <div class="app-card__game">Fortnite</div>
+              <p>Interactive Fortnite map with location-based match stats, route tracking, map replays, and match analysis prompts.</p>
+              <div class="app-card__actions">
+                <a class="download" href="https://download.overwolf.com/install/Download?Name=Fortmapp&amp;ExtensionId=eglgjdefmjkaeoebbjojgpfknnppbeffhgehbmdh&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=fortmapp">Download for Windows</a>
+                <a class="details" href="/fortmapp/">Explore Fortmapp</a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container content-grid">
-        <div class="prose">
-          <p class="eyebrow">About</p>
-          <h2>Built and maintained by one independent developer</h2>
-          <p>I am Albérico Dias Barreto Filho, a software engineer and independent developer. These products are designed as practical game companions: they use game context and player-controlled data to make information easier to act on without replacing the game itself.</p>
-          <p>The Overwolf Store listings remain the canonical product listings. This site provides stable, crawlable product references plus direct official installer links with source attribution.</p>
+    <section class="section">
+      <div class="container story-shell">
+        <div class="story-copy">
+          <p class="eyebrow">Why these tools work</p>
+          <h2>Small surfaces.<br>Better <span class="accent-word">decisions.</span></h2>
+          <p class="lead">These products are designed as practical game companions: they use game context and player-controlled data to make information easier to act on without replacing the game itself.</p>
         </div>
-        <aside class="fact-box" aria-label="Site facts">
-          <dl>
-            <dt>Developer</dt><dd>Albérico Dias Barreto Filho</dd>
-            <dt>Platform</dt><dd>Windows / Overwolf</dd>
-            <dt>Downloads</dt><dd>Official Overwolf installer</dd>
-            <dt>Reference format</dt><dd>Static HTML, structured data, sitemap, and machine-readable summaries</dd>
-          </dl>
-        </aside>
+
+        <div class="bento">
+          <article class="bento-card large">
+            <div class="bento-card__index">01</div>
+            <h3>Live game context</h3>
+            <p>Use what the app can actually observe to surface the information that matters while a match is happening.</p>
+            <div class="bento-card__visual" aria-hidden="true"></div>
+          </article>
+          <article class="bento-card">
+            <div class="bento-card__index">02</div>
+            <h3>Fast in-game decisions</h3>
+            <p>Keep active-match surfaces glanceable, compact, and focused on action rather than decoration.</p>
+          </article>
+          <article class="bento-card">
+            <div class="bento-card__index">03</div>
+            <h3>Post-match review</h3>
+            <p>Preserve enough evidence after the match to understand what changed and what is worth reviewing.</p>
+          </article>
+          <article class="bento-card wide">
+            <div class="bento-card__index">04</div>
+            <h3>Official Overwolf distribution</h3>
+            <p>The Overwolf Store listings remain the canonical product listings. This site provides stable, crawlable product references plus direct official installer links with source attribution.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-shell">
+          <div class="about-copy">
+            <p class="eyebrow">About the developer</p>
+            <h2>Built and maintained by <span class="accent-word">one independent developer.</span></h2>
+            <p class="lead">I am Albérico Dias Barreto Filho, a software engineer and independent developer. These products are designed as practical game companions: they use game context and player-controlled data to make information easier to act on without replacing the game itself.</p>
+            <div class="actions">
+              <a class="button primary" href="#apps">Browse apps</a>
+              <a class="button github" href="https://github.com/AlbericoD" rel="me">GitHub profile</a>
+            </div>
+          </div>
+          <div class="studio-scene" aria-hidden="true"></div>
+        </div>
+
+        <div class="support-strip">
+          <div class="support-strip__group">
+            <p class="support-strip__label">Supported games</p>
+            <div class="support-strip__items">
+              <span class="support-strip__item">Marvel Rivals</span>
+              <span class="support-strip__item">Roblox</span>
+              <span class="support-strip__item">Counter-Strike 2</span>
+              <span class="support-strip__item">Fortnite</span>
+            </div>
+          </div>
+          <div class="support-strip__group">
+            <p class="support-strip__label">Trust &amp; distribution</p>
+            <div class="support-strip__items">
+              <span class="support-strip__item">Official Overwolf installers</span>
+              <span class="support-strip__item">Windows / Overwolf</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container faq-shell">
+        <div class="faq-copy">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2>Everything you need to know.</h2>
+          <p class="lead">Quick answers about the apps, distribution, and the direct installer links on this site.</p>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Where do I download the apps?</summary>
+            <p>Each product page has a direct Windows download button that uses the official Overwolf installer. The canonical Overwolf Store listing is also linked on every app page.</p>
+          </details>
+          <details>
+            <summary>Are the downloads distributed through Overwolf?</summary>
+            <p>Yes. The direct links on this site point to Overwolf's installer endpoint, while the Store pages remain the canonical public product listings.</p>
+          </details>
+          <details>
+            <summary>Which games are covered?</summary>
+            <p>The current apps cover Marvel Rivals, Roblox, Counter-Strike 2, and Fortnite.</p>
+          </details>
+          <details>
+            <summary>Why does this site exist if the apps already have Store pages?</summary>
+            <p>It provides stable, crawlable reference pages for product capabilities, terminology, structured data, official links, and direct installer attribution.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">Official product reference site by Albérico Dias Barreto Filho. Game names and trademarks belong to their respective owners.</div>
+    <div class="container footer-row">
+      <span>Official product reference site by Albérico Dias Barreto Filho. Game names and trademarks belong to their respective owners.</span>
+      <span class="footer-note">Games. Data. Better decisions.</span>
+    </div>
   </footer>
 </body>
 </html>
