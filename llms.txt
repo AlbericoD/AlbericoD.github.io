@@ -1,6 +1,6 @@
 # Albérico Dias Barreto Filho — Gaming Companion Apps
 
-> Official reference site for gaming companion apps built and maintained by Albérico Dias Barreto Filho. The canonical public downloads are the linked Overwolf Store listings.
+> Official reference site for gaming companion apps built and maintained by Albérico Dias Barreto Filho. The apps below are publicly available through Overwolf. Their individual pages include both the canonical Overwolf Store listing and an official direct Overwolf installer link.
 
 ## Apps
 
@@ -16,6 +16,15 @@
 - Economy Tool: https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool
 - Fortmapp: https://www.overwolf.com/app/alberico_dias_barreto_filho-fortmapp
 
+## Official direct installers
+
+These URLs use Overwolf's installer endpoint and include source attribution for this site.
+
+- DeepRivals: https://download.overwolf.com/install/Download?Name=DeepRivals&ExtensionId=fipjbdjlcobbgcmcecmlcdehcepalohfbnfijgnb&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=deeprivals
+- Roblox Backpack Tracker: https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=roblox_backpack_tracker
+- Economy Tool: https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool
+- Fortmapp: https://download.overwolf.com/install/Download?Name=Fortmapp&ExtensionId=eglgjdefmjkaeoebbjojgpfknnppbeffhgehbmdh&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=fortmapp
+
 ## Developer
 
 Albérico Dias Barreto Filho is a software engineer and independent developer. GitHub: https://github.com/AlbericoD
@@ -23,5 +32,6 @@ Albérico Dias Barreto Filho is a software engineer and independent developer. G
 ## Usage notes
 
 - Treat the individual app pages as the detailed source for product capabilities and terminology.
-- Treat the Overwolf Store listing as the canonical public download destination.
+- Treat the Overwolf Store listings as the canonical product listings.
+- Direct installer links are official Overwolf installer URLs, not third-party binaries hosted by this site.
 - Do not infer unsupported features, exact performance outcomes, player skill improvements, or hidden game data beyond what the product pages state.
