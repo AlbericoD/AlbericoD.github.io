@@ -7,7 +7,7 @@
 - `deeprivals/marvel-rivals-hero-switch-recommendations/` and `economy-tool/cs2-safe-drop-calculator/`: distinct practical guides, linked from their products.
 - `styles.css`: graphite/off-white palette, restrained lime accent, native system typography and responsive layouts.
 - `assets/screenshots/`: real Overwolf screenshots, responsive WebP derivatives and provenance.
-- `site.js`: optional conversion event hooks. It does not load an analytics service.
+- `site.js`: lightweight PostHog page-view and explicit conversion tracking. It intentionally disables autocapture, session replay and user identification; see [measurement](measurement.md).
 
 ## Editing
 
