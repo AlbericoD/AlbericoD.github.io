@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to read a safe drop in CS2 | Economy Tool</title>
+    <meta
+      name="description"
+      content="Understand CS2 safe drops, full-buy shortfalls and the reserve buffer using a real Economy Tool example. A guide to the Windows Overwolf app."
+    />
+    <meta name="author" content="Albérico Dias Barreto Filho" />
+    <meta name="theme-color" content="#151716" />
+    <link
+      rel="canonical"
+      href="https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Albérico Dias | Independent gaming apps" />
+    <meta property="og:title" content="How to read a safe drop in CS2 | Economy Tool" />
+    <meta
+      property="og:description"
+      content="Understand CS2 safe drops, full-buy shortfalls and the reserve buffer using a real Economy Tool example. A guide to the Windows Overwolf app."
+    />
+    <meta
+      property="og:url"
+      content="https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/"
+    />
+    <meta
+      property="og:image"
+      content="https://albericod.github.io/assets/screenshots/economy-tool-1200.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta
+      property="og:image:alt"
+      content="Economy Tool showing an Eco call, team balance, a safe-to-drop player, buy shortfalls and economy trend"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://albericod.github.io/#alberico",
+            "name": "Albérico Dias Barreto Filho",
+          "alternateName": "AlbericoD",
+            "url": "https://albericod.github.io/#about",
+            "sameAs": ["https://github.com/AlbericoD"],
+            "jobTitle": "Independent software developer"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://albericod.github.io/#website",
+            "url": "https://albericod.github.io/",
+            "name": "Albérico Dias Barreto Filho | Independent gaming apps",
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://albericod.github.io/economy-tool/#app",
+            "name": "Economy Tool",
+            "url": "https://albericod.github.io/economy-tool/",
+            "description": "A CS2 economy overlay for Full Buy, Force Buy and Eco decisions. See safe drops, set a reserve buffer and read enemy economy estimates in match context.",
+            "operatingSystem": "Windows",
+            "softwareRequirements": "Overwolf",
+            "applicationCategory": "GameApplication",
+            "author": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "about": {
+              "@type": "VideoGame",
+              "name": "Counter-Strike 2"
+            },
+            "sameAs": ["https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"],
+            "downloadUrl": "https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool",
+            "installUrl": "https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool",
+            "screenshot": "https://albericod.github.io/assets/screenshots/economy-tool-1200.jpg",
+            "featureList": [
+              "Read the team buy: See Full Buy, Force Buy or Eco context alongside the team balance and economy trend.",
+              "Find a safe drop: See who has room to drop and who is short for a full buy. Use a reserve buffer to keep your plan in view.",
+              "Put estimates in context: Read enemy economy estimates alongside round evidence. Use match context to discuss a buy with your team."
+            ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/#article",
+            "headline": "How to read a safe drop in CS2",
+            "description": "Understand CS2 safe drops, full-buy shortfalls and the reserve buffer using a real Economy Tool example. A guide to the Windows Overwolf app.",
+            "url": "https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/",
+            "mainEntityOfPage": "https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/",
+            "author": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "datePublished": "2026-09-07",
+            "dateModified": "2026-09-07",
+            "inLanguage": "en",
+            "image": "https://albericod.github.io/assets/screenshots/economy-tool-1200.jpg",
+            "about": {
+              "@id": "https://albericod.github.io/economy-tool/#app"
+            },
+            "isPartOf": {
+              "@id": "https://albericod.github.io/#website"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Apps",
+                "item": "https://albericod.github.io/#apps"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Economy Tool",
+                "item": "https://albericod.github.io/economy-tool/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "How to read a safe drop in CS2",
+                "item": "https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script src="/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="/">Albérico Dias<span>Independent developer</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/#apps">Apps</a><a href="/#about">About</a
+        ><a href="https://github.com/AlbericoD">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/#apps">Apps</a><span aria-hidden="true">/</span
+        ><a href="/economy-tool/">Economy Tool</a><span aria-hidden="true">/</span
+        ><span aria-current="page">Guide</span>
+      </nav>
+      <div class="article-layout">
+        <article class="article">
+          <header class="article-header">
+            <p class="eyebrow">Economy Tool / CS2 guide</p>
+            <h1>How to read a safe drop in CS2</h1>
+            <p class="byline">
+              By <a href="/#about">Albérico Dias Barreto Filho</a> ·
+              <time datetime="2026-09-07">September 7, 2026</time>
+            </p>
+            <div class="actions">
+              <a
+                class="button"
+                href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool"
+                data-event="download_click"
+                data-app="economy-tool"
+                data-placement="guide-intro"
+                >Download for Windows</a
+              ><a
+                class="text-link"
+                href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"
+                data-event="store_click"
+                data-app="economy-tool"
+                data-placement="guide-intro"
+                >View on Overwolf <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </header>
+          <p class="article-lead">
+            A player can have money to drop while the team still needs an Eco. Economy Tool puts
+            individual safe-drop amounts beside team economy, so you can read both before buying.
+          </p>
+          <p>
+            This is a guide to the <a href="/economy-tool/">Economy Tool Windows app</a>. It is not
+            an interactive browser calculator. The app works with CS2 match context through
+            Overwolf.
+          </p>
+          <h2>What does “safe to drop” mean?</h2>
+          <p>
+            The safe-drop amount indicates room to spend on a teammate after allowing for the buy
+            needs and reserve used by the app. It answers an individual spending question. The Full
+            Buy, Force Buy or Eco call answers a broader team question.
+          </p>
+          <p>
+            Use both. One well-funded player does not automatically give everyone a coordinated full
+            buy.
+          </p>
+          <h2>What goes into the context?</h2>
+          <ul>
+            <li><strong>Current money:</strong> what is available to spend now.</li>
+            <li>
+              <strong>Side-specific buy needs:</strong> the planned buy depends on which side you
+              are playing.
+            </li>
+            <li>
+              <strong>Reserve buffer:</strong> money you choose to keep rather than spend on drops.
+            </li>
+            <li>
+              <strong>Loss bonus and round context:</strong> information relevant to reading the
+              team’s economy and future buying situation.
+            </li>
+          </ul>
+          <p>
+            These inputs explain what to inspect. They are not a fixed formula you should apply
+            independently of the app’s configuration or the current match.
+          </p>
+          <h2>A real example: an Eco with one available drop</h2>
+          <p>
+            The screenshot shows an <strong>Eco</strong> call and a team average balance of
+            <strong>$1,820</strong>. One player is marked <strong>Safe to drop +$3,000</strong>,
+            while the remaining players have full-buy shortfalls.
+          </p>
+          <p>
+            Those numbers are not contradictory. The positive amount belongs to one player; the team
+            call reflects a wider situation. Read the shortfalls before assuming that one drop makes
+            the whole team ready to buy.
+          </p>
+          <figure class="product-figure figure-economy-tool">
+            <a
+              class="image-link"
+              href="/assets/screenshots/economy-tool-1200.jpg"
+              aria-label="View full Economy Tool screenshot"
+            >
+              <img
+                src="/assets/screenshots/economy-tool-detail-613.webp"
+                srcset="
+                  /assets/screenshots/economy-tool-detail-480.webp 480w,
+                  /assets/screenshots/economy-tool-detail-613.webp 613w
+                "
+                sizes="(max-width: 767px) calc(100vw - 40px), 60vw"
+                width="613"
+                height="666"
+                alt="Economy Tool showing an Eco call, team balance, a safe-to-drop player, buy shortfalls and economy trend"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <figcaption>
+              Team economy, safe drops and buy shortfalls. Cropped from the official Overwolf
+              screenshot. <a href="/assets/screenshots/economy-tool-1200.jpg">View full image</a>
+            </figcaption>
+          </figure>
+          <p>
+            The image is an example from the official product listing, not a live calculation for
+            your match. Its displayed targets and amounts are not universal CS2 buying thresholds.
+          </p>
+          <h2>Use the reserve buffer deliberately</h2>
+          <p>
+            The reserve buffer lets you retain money in the calculation. A larger reserve leaves
+            less room to spend immediately. Check that the setting reflects your intended plan
+            rather than assuming every spare dollar should become a drop.
+          </p>
+          <p>
+            Before buying, compare the indicated drop with the teammate’s actual need and the team’s
+            agreed buy. The app provides context; the team still needs to coordinate.
+          </p>
+          <h2>Do not treat enemy economy as exact</h2>
+          <p>
+            Economy Tool estimates enemy economy from available round evidence. It does not expose
+            an exact view of opponents’ money. Use that estimate as one part of match context, with
+            uncertainty, rather than as a guaranteed prediction of their next buy.
+          </p>
+          <h2>A short pre-buy check</h2>
+          <ol>
+            <li>Read the team call: Full Buy, Force Buy or Eco.</li>
+            <li>Check individual full-buy shortfalls and available safe drops.</li>
+            <li>Confirm that the reserve buffer matches the plan.</li>
+            <li>Agree who buys and who drops before spending.</li>
+          </ol>
+          <h2>When is Economy Tool a useful fit?</h2>
+          <p>
+            Use it when you want a live CS2 economy overlay that keeps the team balance, individual
+            drops and match context together. If you only want a one-off web calculation without
+            installing an app, this is a different workflow.
+          </p>
+          <p>
+            See the <a href="/economy-tool/">Economy Tool product page</a> for the feature overview
+            and official Overwolf listing.
+          </p>
+        </article>
+        <aside class="article-aside" aria-label="Get the app">
+          <p class="eyebrow">The app behind the guide</p>
+          <h2>Economy Tool</h2>
+          <p>Plan CS2 buys and safe drops.</p>
+          <div class="actions">
+            <a
+              class="button"
+              href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool"
+              data-event="download_click"
+              data-app="economy-tool"
+              data-placement="guide"
+              >Download for Windows</a
+            ><a
+              class="text-link"
+              href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"
+              data-event="store_click"
+              data-app="economy-tool"
+              data-placement="guide"
+              >View on Overwolf <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p class="install-note">Windows / Overwolf. Official installer.</p>
+          <a class="text-link" href="/economy-tool/">Explore the app</a>
+        </aside>
+      </div>
+      <section class="download-section">
+        <div>
+          <h2>Get Economy Tool.</h2>
+          <p>Keep the context close to the game.</p>
+        </div>
+        <div class="actions">
+          <a
+            class="button"
+            href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool"
+            data-event="download_click"
+            data-app="economy-tool"
+            data-placement="guide-final"
+            >Download for Windows</a
+          ><a
+            class="text-link"
+            href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"
+            data-event="store_click"
+            data-app="economy-tool"
+            data-placement="guide-final"
+            >View on Overwolf <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="footer-name" href="/#about">Albérico Dias Barreto Filho</a>
+        <p>Independent Windows apps. Distributed through Overwolf.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/#apps">All apps</a
+        ><a href="https://github.com/AlbericoD/AlbericoD.github.io">Site source</a
+        ><a href="/llms.txt">Product index</a>
+      </nav>
+      <p class="legal">
+        Independent companion apps. Game names and images belong to their respective owners. This
+        site is not an official site of the game publishers.
+      </p>
+    </footer>
+  </body>
+</html>

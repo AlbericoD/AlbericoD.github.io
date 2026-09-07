@@ -1,194 +1,310 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Economy Tool — CS2 team economy companion</title>
-  <meta name="description" content="Economy Tool is a Counter-Strike 2 companion for Full Buy, Force Buy, Eco, safe-drop decisions, player economy roles, enemy economy estimates, and AI-ready match prompts.">
-  <link rel="canonical" href="https://albericod.github.io/economy-tool/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Economy Tool — CS2 team economy companion">
-  <meta property="og:description" content="Turn CS2 team money into clear buy calls, safe drops, player roles, enemy economy estimates, and match prompts.">
-  <meta property="og:url" content="https://albericod.github.io/economy-tool/">
-  <link rel="stylesheet" href="/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Economy Tool: CS2 economy overlay &amp; safe drop calculator</title>
+    <meta
+      name="description"
+      content="A CS2 economy overlay for Full Buy, Force Buy and Eco decisions. See safe drops, set a reserve buffer and read enemy economy estimates in match context."
+    />
+    <meta name="author" content="Albérico Dias Barreto Filho" />
+    <meta name="theme-color" content="#151716" />
+    <link rel="canonical" href="https://albericod.github.io/economy-tool/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Albérico Dias | Independent gaming apps" />
+    <meta
+      property="og:title"
+      content="Economy Tool: CS2 economy overlay &amp; safe drop calculator"
+    />
+    <meta
+      property="og:description"
+      content="A CS2 economy overlay for Full Buy, Force Buy and Eco decisions. See safe drops, set a reserve buffer and read enemy economy estimates in match context."
+    />
+    <meta property="og:url" content="https://albericod.github.io/economy-tool/" />
+    <meta
+      property="og:image"
+      content="https://albericod.github.io/assets/screenshots/economy-tool-1200.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta
+      property="og:image:alt"
+      content="Economy Tool showing an Eco call, team balance, a safe-to-drop player, buy shortfalls and economy trend"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
       {
-        "@type": "SoftwareApplication",
-        "name": "Economy Tool",
-        "url": "https://albericod.github.io/economy-tool/",
-        "downloadUrl": "https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool",
-        "sameAs": ["https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"],
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "Windows",
-        "isAccessibleForFree": true,
-        "description": "Counter-Strike 2 economy companion for team buy calls, safe drops, player economy roles, enemy economy estimates, and AI-ready match prompts.",
-        "author": {"@type": "Person", "name": "Albérico Dias Barreto Filho", "url": "https://albericod.github.io/"},
-        "about": {"@type": "VideoGame", "name": "Counter-Strike 2"},
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "What does Economy Tool do in CS2?", "acceptedAnswer": {"@type": "Answer", "text": "Economy Tool turns available team money and round context into readable team economy calls such as Full Buy, Buy With Drops, Force Buy, Eco, and Mixed Buy, plus player-level drop and save roles."}},
-          {"@type": "Question", "name": "Does Economy Tool recommend safe drops?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Safe-drop calculations consider current money, side-specific buy costs, loss bonus, and a user-defined reserve buffer so a player can help a teammate without unnecessarily damaging the next-round economy."}},
-          {"@type": "Question", "name": "Where can I download Economy Tool?", "acceptedAnswer": {"@type": "Answer", "text": "Economy Tool is available for Windows through the official Overwolf installer and Overwolf Store."}}
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://albericod.github.io/#alberico",
+            "name": "Albérico Dias Barreto Filho",
+          "alternateName": "AlbericoD",
+            "url": "https://albericod.github.io/#about",
+            "sameAs": ["https://github.com/AlbericoD"],
+            "jobTitle": "Independent software developer"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://albericod.github.io/#website",
+            "url": "https://albericod.github.io/",
+            "name": "Albérico Dias Barreto Filho | Independent gaming apps",
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://albericod.github.io/economy-tool/#app",
+            "name": "Economy Tool",
+            "url": "https://albericod.github.io/economy-tool/",
+            "description": "A CS2 economy overlay for Full Buy, Force Buy and Eco decisions. See safe drops, set a reserve buffer and read enemy economy estimates in match context.",
+            "operatingSystem": "Windows",
+            "softwareRequirements": "Overwolf",
+            "applicationCategory": "GameApplication",
+            "author": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "about": {
+              "@type": "VideoGame",
+              "name": "Counter-Strike 2"
+            },
+            "sameAs": ["https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"],
+            "downloadUrl": "https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool",
+            "installUrl": "https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool",
+            "screenshot": "https://albericod.github.io/assets/screenshots/economy-tool-1200.jpg",
+            "featureList": [
+              "Read the team buy: See Full Buy, Force Buy or Eco context alongside the team balance and economy trend.",
+              "Find a safe drop: See who has room to drop and who is short for a full buy. Use a reserve buffer to keep your plan in view.",
+              "Put estimates in context: Read enemy economy estimates alongside round evidence. Use match context to discuss a buy with your team."
+            ]
+          }
         ]
       }
-    ]
-  }
-  </script>
-</head>
-<body class="app-page theme-economy">
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">Albérico Dias</a>
-      <nav aria-label="Primary navigation">
-        <a href="/deeprivals/">DeepRivals</a>
-        <a href="/roblox-backpack-tracker/">Roblox Backpack Tracker</a>
-        <a href="/economy-tool/" aria-current="page">Economy Tool</a>
-        <a href="/fortmapp/">Fortmapp</a>
-        <a href="/#about">About</a>
+    </script>
+    <script src="/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="/">Albérico Dias<span>Independent developer</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/#apps">Apps</a><a href="/#about">About</a
+        ><a href="https://github.com/AlbericoD">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="product-hero">
-      <div class="container">
-        <div class="product-visual has-image" aria-label="Economy Tool interface preview">
-          <div class="browser-bar" aria-hidden="true">
-            <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-          </div>
-          <img class="product-shot" src="https://console-apps.overwolf.com/prod/apps/bpbdciihabfhpbemdkecilbakkallomibgnjhkmm/assets/48c7b79f-4a07-4cfe-aac2-add9bb37c1f0.jpg" alt="Economy Tool interface for Counter-Strike 2">
-        </div>
-
-        <div class="product-copy">
-          <div class="status-line">Available now · Counter-Strike 2 companion</div>
-          <h1>Economy Tool</h1>
-          <p class="lead">A focused CS2 companion that turns raw team money into fast economy decisions: Full Buy, Force Buy, Eco, safe drops, player roles, enemy economy estimates, and AI-ready match prompts.</p>
-
-          <div class="product-highlights">
-            <div class="product-highlight">
-              <div class="product-highlight__icon">BUY</div>
-              <div><strong>Team economy state</strong><p>Surface Full Buy, Buy With Drops, Force Buy, Eco, or Mixed Buy based on the available match state.</p></div>
-            </div>
-            <div class="product-highlight">
-              <div class="product-highlight__icon">DR</div>
-              <div><strong>Safe-drop logic</strong><p>Estimate how much a player can spend helping teammates while preserving the configured next-round reserve.</p></div>
-            </div>
-            <div class="product-highlight">
-              <div class="product-highlight__icon">EN</div>
-              <div><strong>Enemy economy estimate</strong><p>Use available loss-streak evidence without pretending to know exact enemy balances.</p></div>
-            </div>
-            <div class="product-highlight">
-              <div class="product-highlight__icon">AI</div>
-              <div><strong>AI-ready prompts</strong><p>Format current or saved match context for analysis in LLM tools such as ChatGPT or Gemini.</p></div>
-            </div>
-          </div>
-
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/#apps">Apps</a><span aria-hidden="true">/</span
+        ><span aria-current="page">Economy Tool</span>
+      </nav>
+      <section class="product-hero product-economy-tool" aria-labelledby="product-title">
+        <div class="product-hero-copy">
+          <p class="eyebrow">Counter-Strike 2 · Windows / Overwolf</p>
+          <h1 id="product-title">Economy Tool</h1>
+          <p class="product-job">Plan CS2 buys and safe drops.</p>
+          <p class="lead">
+            A CS2 economy overlay for Full Buy, Force Buy and Eco decisions. See safe drops, set a
+            reserve buffer and read enemy economy estimates in match context.
+          </p>
           <div class="actions">
-            <a class="button primary download" href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool">Download for Windows</a>
-            <a class="button store" href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool">View on Overwolf</a>
+            <a
+              class="button"
+              href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool"
+              data-event="download_click"
+              data-app="economy-tool"
+              data-placement="hero"
+              >Download for Windows</a
+            ><a
+              class="text-link"
+              href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"
+              data-event="store_click"
+              data-app="economy-tool"
+              data-placement="hero"
+              >View on Overwolf <span aria-hidden="true">↗</span></a
+            >
           </div>
-          <p class="action-note">Official Overwolf installer. If Overwolf is not installed, the installer will set it up with the app.</p>
-
-          <div class="product-trust">
-            <span>Counter-Strike 2</span><span>Windows / Overwolf</span><span>Public</span>
+          <p class="install-note">Official Overwolf installer. Requires a Windows PC.</p>
+        </div>
+        <figure class="product-figure figure-economy-tool">
+          <a
+            class="image-link"
+            href="/assets/screenshots/economy-tool-1200.jpg"
+            aria-label="View full Economy Tool screenshot"
+          >
+            <img
+              src="/assets/screenshots/economy-tool-detail-613.webp"
+              srcset="
+                /assets/screenshots/economy-tool-detail-480.webp 480w,
+                /assets/screenshots/economy-tool-detail-613.webp 613w
+              "
+              sizes="(max-width: 767px) calc(100vw - 40px), 60vw"
+              width="613"
+              height="666"
+              alt="Economy Tool showing an Eco call, team balance, a safe-to-drop player, buy shortfalls and economy trend"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </a>
+          <figcaption>
+            Team economy, safe drops and buy shortfalls. Cropped from the official Overwolf
+            screenshot. <a href="/assets/screenshots/economy-tool-1200.jpg">View full image</a>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="capabilities section-grid" aria-labelledby="capabilities-title">
+        <div><h2 id="capabilities-title">Make the team buy make sense.</h2></div>
+        <div class="feature-list">
+          <section>
+            <h3>Read the team buy</h3>
+            <p>
+              See Full Buy, Force Buy or Eco context alongside the team balance and economy trend.
+            </p>
+          </section>
+          <section>
+            <h3>Find a safe drop</h3>
+            <p>
+              See who has room to drop and who is short for a full buy. Use a reserve buffer to keep
+              your plan in view.
+            </p>
+          </section>
+          <section>
+            <h3>Put estimates in context</h3>
+            <p>
+              Read enemy economy estimates alongside round evidence. Use match context to discuss a
+              buy with your team.
+            </p>
+          </section>
+        </div>
+      </section>
+      <aside class="guide-link">
+        <p class="eyebrow">Practical guide</p>
+        <div>
+          <h2>
+            <a href="/economy-tool/cs2-safe-drop-calculator/"
+              >How to read a safe drop in CS2 <span aria-hidden="true">↗</span></a
+            >
+          </h2>
+          <p>
+            Understand the reserve buffer, individual shortfalls and the team buy before you drop.
+          </p>
+        </div>
+      </aside>
+      <section class="section-grid facts-section" aria-labelledby="facts-title">
+        <div><h2 id="facts-title">Before you install.</h2></div>
+        <dl class="facts">
+          <div>
+            <dt>Game</dt>
+            <dd>Counter-Strike 2</dd>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="product-body">
-      <div class="container">
-        <div class="product-body__grid">
-          <div class="product-body__intro">
-            <p class="eyebrow">What it does</p>
-            <h2>Make the economy call before freeze time ends.</h2>
-            <p class="lead">Economy Tool is built around one job: help a CS2 player understand the current or latest economy state within a few seconds. It complements the game HUD rather than trying to replace it.</p>
+          <div>
+            <dt>Platform</dt>
+            <dd>Windows, with Overwolf</dd>
           </div>
-
-          <div class="product-sections">
-            <section class="product-section">
-              <p class="eyebrow">Core features</p>
-              <h2>Fast calls without fake precision.</h2>
-              <div class="feature-grid">
-                <article class="feature-item"><strong>Team economy state</strong><p>Surface Full Buy, Buy With Drops, Force Buy, Eco, or Mixed Buy based on the available match state.</p></article>
-                <article class="feature-item"><strong>Player-level roles</strong><p>Identify players who can safely drop, are already covered for a buy, should save, or are in an eco state.</p></article>
-                <article class="feature-item"><strong>Safe-drop logic</strong><p>Estimate how much a player can spend helping teammates while preserving the configured next-round reserve.</p></article>
-                <article class="feature-item"><strong>Side-aware buy costs</strong><p>Account for the fact that CT and T full-buy costs differ.</p></article>
-                <article class="feature-item"><strong>Loss-bonus context</strong><p>Incorporate round-economy context when estimating what the next round may look like.</p></article>
-                <article class="feature-item"><strong>Enemy economy estimation</strong><p>Provide a readable enemy-economy state based on available loss-streak evidence instead of pretending to know exact money.</p></article>
-                <article class="feature-item"><strong>Adjustable risk profile</strong><p>Let the user choose how conservative or aggressive the reserve buffer should be.</p></article>
-                <article class="feature-item"><strong>AI-ready prompts</strong><p>Format current or saved match context for analysis in LLM tools such as ChatGPT or Gemini.</p></article>
-              </div>
-            </section>
-
-            <section class="product-section">
-              <p class="eyebrow">Why use it</p>
-              <h2>Reduce the mental math during freeze time.</h2>
-              <p>CS2 economy decisions are time-sensitive and team-dependent. The app keeps the logic consistent across rounds, makes drop responsibilities more visible, and reduces the amount of arithmetic the player has to do during freeze time.</p>
-            </section>
-
-            <section class="product-section">
-              <p class="eyebrow">Evidence over invention</p>
-              <h2>Designed to avoid fake precision.</h2>
-              <p>Enemy economy is presented as an estimate based on evidence the app can actually observe, not as invented exact balances. The same principle applies throughout the product: live and saved match evidence stays more important than decorative explanation.</p>
-            </section>
+          <div>
+            <dt>Developer</dt>
+            <dd><a href="/#about">Albérico Dias Barreto Filho</a></dd>
           </div>
-        </div>
-
-        <div class="fact-rail" aria-label="Economy Tool facts">
-          <div class="fact-rail__item"><small>Game</small><strong>Counter-Strike 2</strong></div>
-          <div class="fact-rail__item"><small>Platform</small><strong>Windows / Overwolf</strong></div>
-          <div class="fact-rail__item"><small>Category</small><strong>Team economy &amp; buy decisions</strong></div>
-          <div class="fact-rail__item"><small>Developer</small><strong>Albérico Dias Barreto Filho</strong></div>
-          <div class="fact-rail__item"><small>Official listing</small><strong><a href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool">Overwolf Store ↗</a></strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="app-faq">
-      <div class="container faq-shell">
-        <div class="faq-copy">
-          <p class="eyebrow">Frequently asked questions</p>
-          <h2>Common questions.</h2>
-          <p class="lead">The app is deliberately conservative about what it claims to know, especially when estimating the enemy side.</p>
-        </div>
+          <div>
+            <dt>Distribution</dt>
+            <dd>
+              <a
+                href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"
+                data-event="store_click"
+                data-app="economy-tool"
+                data-placement="facts"
+                >Official Overwolf listing</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>Releases &amp; support</dt>
+            <dd>See the Overwolf listing for current details.</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="section-grid faq-section" aria-labelledby="faq-title">
+        <div><h2 id="faq-title">About Economy Tool.</h2></div>
         <div class="faq-list">
-          <details open>
-            <summary>What does Economy Tool do in CS2?</summary>
-            <p>It turns available team money and round context into readable buy calls, player economy roles, safe-drop guidance, and a simple enemy-economy estimate.</p>
+          <details>
+            <summary>Is this a calculator I can use in my browser?</summary>
+            <p>
+              No. Economy Tool is a Windows app distributed through Overwolf. Its economy overlay
+              works with CS2 match context; this website explains it and links to the official
+              installer.
+            </p>
           </details>
           <details>
-            <summary>Does it tell me who should drop?</summary>
-            <p>Yes. Player-level logic can distinguish who can safely help, who already has enough for the intended buy, and who still needs help.</p>
+            <summary>What does safe to drop mean?</summary>
+            <p>
+              It is the amount the app indicates a player can spend on drops after accounting for
+              the configured buy needs and reserve. Read it together with the team buy call and the
+              current round.
+            </p>
           </details>
           <details>
-            <summary>How does safe-drop logic work?</summary>
-            <p>It considers current money, the expected cost of the next buy, loss-bonus context, and a configurable reserve buffer. The goal is to help a teammate without unnecessarily breaking your own next-round economy.</p>
+            <summary>Does it know the exact enemy balance?</summary>
+            <p>
+              No. Enemy economy is an estimate based on available round evidence. It should not be
+              read as an exact view of opponents’ money.
+            </p>
           </details>
           <details>
-            <summary>Does it know the enemy team's exact money?</summary>
-            <p>No. The enemy side is treated as an estimate based on available round evidence. The app deliberately avoids presenting unsupported exact values.</p>
-          </details>
-          <details>
-            <summary>Where is the official download?</summary>
-            <p>Economy Tool is publicly available through Overwolf. The primary button on this page uses Overwolf's official Windows installer; the secondary button opens the canonical Overwolf Store listing.</p>
+            <summary>Can I adjust the reserve buffer?</summary>
+            <p>
+              Yes. The reserve buffer lets you retain money in the calculation instead of treating
+              all available cash as spendable on drops.
+            </p>
           </details>
         </div>
+      </section>
+      <section class="download-section" aria-labelledby="download-title">
+        <div>
+          <h2 id="download-title">Get Economy Tool.</h2>
+          <p>Install through Overwolf and open the app on your Windows PC.</p>
+        </div>
+        <div class="actions">
+          <a
+            class="button"
+            href="https://download.overwolf.com/install/Download?Name=Economy_Tool&amp;ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=economy_tool"
+            data-event="download_click"
+            data-app="economy-tool"
+            data-placement="final"
+            >Download for Windows</a
+          ><a
+            class="text-link"
+            href="https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool"
+            data-event="store_click"
+            data-app="economy-tool"
+            data-placement="final"
+            >View on Overwolf <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="footer-name" href="/#about">Albérico Dias Barreto Filho</a>
+        <p>Independent Windows apps. Distributed through Overwolf.</p>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <span>Economy Tool is an independent companion app. Counter-Strike 2 and related trademarks belong to their respective owners.</span>
-      <span class="footer-note">Read the round. Spend smarter.</span>
-    </div>
-  </footer>
-</body>
+      <nav aria-label="Footer navigation">
+        <a href="/#apps">All apps</a
+        ><a href="https://github.com/AlbericoD/AlbericoD.github.io">Site source</a
+        ><a href="/llms.txt">Product index</a>
+      </nav>
+      <p class="legal">
+        Independent companion apps. Game names and images belong to their respective owners. This
+        site is not an official site of the game publishers.
+      </p>
+    </footer>
+  </body>
 </html>

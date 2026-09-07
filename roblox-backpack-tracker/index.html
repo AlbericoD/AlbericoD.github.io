@@ -1,195 +1,298 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Roblox Backpack Tracker — track items, values, Experiences, and accounts</title>
-  <meta name="description" content="Roblox Backpack Tracker is a Windows and Overwolf companion for tracking Backpack items, estimated values, Roblox Experiences, multiple accounts, custom values, and inventory history.">
-  <link rel="canonical" href="https://albericod.github.io/roblox-backpack-tracker/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Roblox Backpack Tracker">
-  <meta property="og:description" content="Track Backpack items, values, Roblox Experiences, multiple accounts, My Values, and history with a lightweight in-game Quick Add workflow.">
-  <meta property="og:url" content="https://albericod.github.io/roblox-backpack-tracker/">
-  <link rel="stylesheet" href="/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblox Backpack Tracker: items, accounts &amp; personal values</title>
+    <meta
+      name="description"
+      content="Organize Roblox Backpacks across Experiences and accounts. Add items with Quick Add, record your own values, and keep Archive and value history in one place."
+    />
+    <meta name="author" content="Albérico Dias Barreto Filho" />
+    <meta name="theme-color" content="#151716" />
+    <link rel="canonical" href="https://albericod.github.io/roblox-backpack-tracker/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Albérico Dias | Independent gaming apps" />
+    <meta
+      property="og:title"
+      content="Roblox Backpack Tracker: items, accounts &amp; personal values"
+    />
+    <meta
+      property="og:description"
+      content="Organize Roblox Backpacks across Experiences and accounts. Add items with Quick Add, record your own values, and keep Archive and value history in one place."
+    />
+    <meta property="og:url" content="https://albericod.github.io/roblox-backpack-tracker/" />
+    <meta
+      property="og:image"
+      content="https://albericod.github.io/assets/screenshots/roblox-backpack-tracker-1200.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta
+      property="og:image:alt"
+      content="Roblox Backpack Tracker with Experience navigation, account selector, item quantities, personal values and Archive tab"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
       {
-        "@type": "SoftwareApplication",
-        "name": "Roblox Backpack Tracker",
-        "url": "https://albericod.github.io/roblox-backpack-tracker/",
-        "downloadUrl": "https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=roblox_backpack_tracker",
-        "sameAs": ["https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker"],
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "Windows",
-        "isAccessibleForFree": true,
-        "description": "Roblox companion for tracking Backpack items, estimated values, Experiences, multiple accounts, custom values, and inventory history.",
-        "author": {"@type": "Person", "name": "Albérico Dias Barreto Filho", "url": "https://albericod.github.io/"},
-        "about": {"@type": "VideoGame", "name": "Roblox"},
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "What is Roblox Backpack Tracker?", "acceptedAnswer": {"@type": "Answer", "text": "Roblox Backpack Tracker is a value-aware Backpack notebook for Roblox. It combines a desktop editor with a small in-game value pill and Quick Add workflow."}},
-          {"@type": "Question", "name": "Does Roblox Backpack Tracker work with multiple Roblox accounts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Backpacks are separated by Roblox account and Experience, and an All Accounts view can aggregate saved Backpack value across accounts."}},
-          {"@type": "Question", "name": "Does it work with any Roblox Experience?", "acceptedAnswer": {"@type": "Answer", "text": "Any detected Roblox Experience can become a manual Backpack after meaningful interaction. Enhanced or automatic ingestion is optional and only available where supported."}},
-          {"@type": "Question", "name": "Where can I download Roblox Backpack Tracker?", "acceptedAnswer": {"@type": "Answer", "text": "Roblox Backpack Tracker is publicly available for Windows through the official Overwolf installer and Overwolf Store."}}
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://albericod.github.io/#alberico",
+            "name": "Albérico Dias Barreto Filho",
+          "alternateName": "AlbericoD",
+            "url": "https://albericod.github.io/#about",
+            "sameAs": ["https://github.com/AlbericoD"],
+            "jobTitle": "Independent software developer"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://albericod.github.io/#website",
+            "url": "https://albericod.github.io/",
+            "name": "Albérico Dias Barreto Filho | Independent gaming apps",
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://albericod.github.io/roblox-backpack-tracker/#app",
+            "name": "Roblox Backpack Tracker",
+            "url": "https://albericod.github.io/roblox-backpack-tracker/",
+            "description": "Organize Roblox Backpacks across Experiences and accounts. Add items with Quick Add, record your own values, and keep Archive and value history in one place.",
+            "operatingSystem": "Windows",
+            "softwareRequirements": "Overwolf",
+            "applicationCategory": "GameApplication",
+            "author": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "publisher": {
+              "@id": "https://albericod.github.io/#alberico"
+            },
+            "about": {
+              "@type": "VideoGame",
+              "name": "Roblox"
+            },
+            "sameAs": [
+              "https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker"
+            ],
+            "downloadUrl": "https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=roblox_backpack_tracker",
+            "installUrl": "https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=roblox_backpack_tracker",
+            "screenshot": "https://albericod.github.io/assets/screenshots/roblox-backpack-tracker-1200.jpg",
+            "featureList": [
+              "Organize by Experience: Start a Backpack for a Roblox Experience and use Quick Add to record items. Keep separate collections in one app.",
+              "Switch accounts, keep context: View a single account or use All Accounts to see a combined Backpack across your accounts.",
+              "Keep your own value history: Use My Values for personal price notes. Archive items and review history as your collection changes."
+            ]
+          }
         ]
       }
-    ]
-  }
-  </script>
-</head>
-<body class="app-page theme-roblox">
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">Albérico Dias</a>
-      <nav aria-label="Primary navigation">
-        <a href="/deeprivals/">DeepRivals</a>
-        <a href="/roblox-backpack-tracker/" aria-current="page">Roblox Backpack Tracker</a>
-        <a href="/economy-tool/">Economy Tool</a>
-        <a href="/fortmapp/">Fortmapp</a>
-        <a href="/#about">About</a>
+    </script>
+    <script src="/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="/">Albérico Dias<span>Independent developer</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/#apps">Apps</a><a href="/#about">About</a
+        ><a href="https://github.com/AlbericoD">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="product-hero">
-      <div class="container">
-        <div class="product-visual has-image" aria-label="Roblox Backpack Tracker interface preview">
-          <div class="browser-bar" aria-hidden="true">
-            <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-          </div>
-          <img class="product-shot" src="https://console-apps.overwolf.com/prod/apps/ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn/assets/b62c4106-ba54-4b40-abed-7e4d1be1abd9.jpg" alt="Roblox Backpack Tracker showing a Backpack across Experiences and Roblox accounts">
-        </div>
-
-        <div class="product-copy">
-          <div class="status-line">Available now · Roblox companion</div>
-          <h1>Roblox Backpack Tracker</h1>
-          <p class="lead">Keep a readable, value-aware record of your Roblox Backpacks across Experiences and accounts. Use a small in-game Quick Add workflow while playing, then manage items, values, categories, and history from the desktop companion.</p>
-
-          <div class="product-highlights">
-            <div class="product-highlight">
-              <div class="product-highlight__icon">+</div>
-              <div><strong>Quick Add</strong><p>Add items from a compact in-game surface without turning the overlay into another dashboard.</p></div>
-            </div>
-            <div class="product-highlight">
-              <div class="product-highlight__icon">MV</div>
-              <div><strong>My Values</strong><p>Create and edit your own item values, categories, and custom fields.</p></div>
-            </div>
-            <div class="product-highlight">
-              <div class="product-highlight__icon">EX</div>
-              <div><strong>Multiple Experiences</strong><p>Keep separate Backpacks for different Roblox Experiences instead of mixing unrelated inventories.</p></div>
-            </div>
-            <div class="product-highlight">
-              <div class="product-highlight__icon">AC</div>
-              <div><strong>Multiple accounts</strong><p>Maintain account-specific Backpacks and use All Accounts when you want an aggregated view.</p></div>
-            </div>
-          </div>
-
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/#apps">Apps</a><span aria-hidden="true">/</span
+        ><span aria-current="page">Roblox Backpack Tracker</span>
+      </nav>
+      <section class="product-hero product-roblox-backpack-tracker" aria-labelledby="product-title">
+        <div class="product-hero-copy">
+          <p class="eyebrow">Roblox · Windows / Overwolf</p>
+          <h1 id="product-title">Roblox<br />Backpack Tracker</h1>
+          <p class="product-job">Your Backpacks, across Roblox accounts.</p>
+          <p class="lead">
+            Organize Roblox Backpacks across Experiences and accounts. Add items with Quick Add,
+            record your own values, and keep Archive and value history in one place.
+          </p>
           <div class="actions">
-            <a class="button primary download" href="https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&amp;ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=roblox_backpack_tracker">Download for Windows</a>
-            <a class="button store" href="https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker">View on Overwolf</a>
+            <a
+              class="button"
+              href="https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&amp;ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=roblox_backpack_tracker"
+              data-event="download_click"
+              data-app="roblox-backpack-tracker"
+              data-placement="hero"
+              >Download for Windows</a
+            ><a
+              class="text-link"
+              href="https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker"
+              data-event="store_click"
+              data-app="roblox-backpack-tracker"
+              data-placement="hero"
+              >View on Overwolf <span aria-hidden="true">↗</span></a
+            >
           </div>
-          <p class="action-note">Official Overwolf installer. If Overwolf is not installed, the installer will set it up with the app.</p>
-
-          <div class="product-trust">
-            <span>Roblox</span><span>Windows / Overwolf</span><span>Public</span>
+          <p class="install-note">Official Overwolf installer. Requires a Windows PC.</p>
+        </div>
+        <figure class="product-figure figure-roblox-backpack-tracker">
+          <a
+            class="image-link"
+            href="/assets/screenshots/roblox-backpack-tracker-1200.jpg"
+            aria-label="View full Roblox Backpack Tracker screenshot"
+          >
+            <img
+              src="/assets/screenshots/roblox-backpack-tracker-detail-928.webp"
+              srcset="
+                /assets/screenshots/roblox-backpack-tracker-detail-480.webp 480w,
+                /assets/screenshots/roblox-backpack-tracker-detail-928.webp 928w
+              "
+              sizes="(max-width: 767px) calc(100vw - 40px), 60vw"
+              width="928"
+              height="660"
+              alt="Roblox Backpack Tracker with Experience navigation, account selector, item quantities, personal values and Archive tab"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </a>
+          <figcaption>
+            Backpack, account selector and personal item values. Cropped from the official Overwolf
+            screenshot.
+            <a href="/assets/screenshots/roblox-backpack-tracker-1200.jpg">View full image</a>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="capabilities section-grid" aria-labelledby="capabilities-title">
+        <div><h2 id="capabilities-title">Keep items, accounts and values together.</h2></div>
+        <div class="feature-list">
+          <section>
+            <h3>Organize by Experience</h3>
+            <p>
+              Start a Backpack for a Roblox Experience and use Quick Add to record items. Keep
+              separate collections in one app.
+            </p>
+          </section>
+          <section>
+            <h3>Switch accounts, keep context</h3>
+            <p>
+              View a single account or use All Accounts to see a combined Backpack across your
+              accounts.
+            </p>
+          </section>
+          <section>
+            <h3>Keep your own value history</h3>
+            <p>
+              Use My Values for personal price notes. Archive items and review history as your
+              collection changes.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="section-grid facts-section" aria-labelledby="facts-title">
+        <div><h2 id="facts-title">Before you install.</h2></div>
+        <dl class="facts">
+          <div>
+            <dt>Game</dt>
+            <dd>Roblox</dd>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="product-body">
-      <div class="container">
-        <div class="product-body__grid">
-          <div class="product-body__intro">
-            <p class="eyebrow">What it does</p>
-            <h2>A Backpack notebook that stays useful while you play.</h2>
-            <p class="lead">The desktop app acts as the full Backpack editor. In-game, the app stays intentionally small: a compact estimated-value pill plus Quick Add for recording an item without turning the overlay into another dashboard.</p>
+          <div>
+            <dt>Platform</dt>
+            <dd>Windows, with Overwolf</dd>
           </div>
-
-          <div class="product-sections">
-            <section class="product-section">
-              <p class="eyebrow">Core features</p>
-              <h2>Track, value, organize, and review.</h2>
-              <div class="feature-grid">
-                <article class="feature-item"><strong>Quick Add</strong><p>Add items from a compact in-game surface and materialize a Backpack only after meaningful interaction.</p></article>
-                <article class="feature-item"><strong>Multiple Experiences</strong><p>Keep separate Backpacks for different Roblox Experiences instead of mixing unrelated inventories.</p></article>
-                <article class="feature-item"><strong>Multiple Roblox accounts</strong><p>Maintain account-specific Backpacks and use All Accounts when you want an aggregated view.</p></article>
-                <article class="feature-item"><strong>My Values</strong><p>Create and edit your own item values, categories, and custom fields.</p></article>
-                <article class="feature-item"><strong>Archive</strong><p>Remove items from the active Backpack without losing the record.</p></article>
-                <article class="feature-item"><strong>Value history</strong><p>Review trusted Backpack value observations over time without fabricating missing days.</p></article>
-                <article class="feature-item"><strong>Optional automatic ingestion</strong><p>Supported Experiences can provide richer catalog or inventory data when that capability is available; manual Backpacks remain the base model.</p></article>
-              </div>
-            </section>
-
-            <section class="product-section">
-              <p class="eyebrow">Across Roblox</p>
-              <h2>Designed to stay generic across Roblox.</h2>
-              <p>The app does not require every Roblox Experience to have a dedicated integration. A detected Experience can remain transient until you use Quick Add, explicitly start a Backpack, add an item from the desktop app, or receive a valid supported automatic inventory update.</p>
-              <p>This keeps unsupported Experiences useful instead of forcing the product into a small fixed list of games.</p>
-            </section>
-
-            <section class="product-section">
-              <p class="eyebrow">One Backpack model</p>
-              <h2>Manual and automatic tracking are one product.</h2>
-              <p>There is no separate “manual notebook” versus “automatic notebook” concept. There is only a Backpack. Automatic tracking, where supported, is simply another way of adding or updating data inside the same Backpack model.</p>
-            </section>
+          <div>
+            <dt>Developer</dt>
+            <dd><a href="/#about">Albérico Dias Barreto Filho</a></dd>
           </div>
-        </div>
-
-        <div class="fact-rail" aria-label="Roblox Backpack Tracker facts">
-          <div class="fact-rail__item"><small>Game</small><strong>Roblox</strong></div>
-          <div class="fact-rail__item"><small>Platform</small><strong>Windows / Overwolf</strong></div>
-          <div class="fact-rail__item"><small>Category</small><strong>Inventory &amp; value tracker</strong></div>
-          <div class="fact-rail__item"><small>Developer</small><strong>Albérico Dias Barreto Filho</strong></div>
-          <div class="fact-rail__item"><small>Official listing</small><strong><a href="https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker">Overwolf Store ↗</a></strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="app-faq">
-      <div class="container faq-shell">
-        <div class="faq-copy">
-          <p class="eyebrow">Frequently asked questions</p>
-          <h2>Common questions.</h2>
-          <p class="lead">The product stays intentionally generic: a Backpack works manually everywhere, with enhanced ingestion only where supported.</p>
-        </div>
+          <div>
+            <dt>Distribution</dt>
+            <dd>
+              <a
+                href="https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker"
+                data-event="store_click"
+                data-app="roblox-backpack-tracker"
+                data-placement="facts"
+                >Official Overwolf listing</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>Releases &amp; support</dt>
+            <dd>See the Overwolf listing for current details.</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="section-grid faq-section" aria-labelledby="faq-title">
+        <div><h2 id="faq-title">About Roblox Backpack Tracker.</h2></div>
         <div class="faq-list">
-          <details open>
-            <summary>What is Roblox Backpack Tracker?</summary>
-            <p>It is a Windows and Overwolf companion for organizing Backpack items, values, Roblox Experiences, accounts, and inventory history.</p>
+          <details>
+            <summary>Does it automatically sync every Roblox inventory?</summary>
+            <p>
+              No. Quick Add and manual organization are the dependable baseline. Do not assume an
+              Experience has automatic tracking just because it appears in the app.
+            </p>
           </details>
           <details>
-            <summary>Does it support multiple Roblox accounts?</summary>
-            <p>Yes. Backpacks are partitioned by account and Experience, while an All Accounts view can aggregate saved value when you want a combined picture.</p>
+            <summary>Are My Values official market prices?</summary>
+            <p>
+              No. My Values holds your personal price notes. Backpack totals reflect those notes and
+              your recorded items; they are not verified market prices or trade offers.
+            </p>
           </details>
           <details>
-            <summary>Does it work with any Roblox Experience?</summary>
-            <p>Any valid detected Experience can become a manual Backpack after meaningful interaction. Some Experiences may also support enhanced or automatic ingestion when that capability is available.</p>
+            <summary>Does it support multiple accounts?</summary>
+            <p>
+              Yes. You can organize Backpacks by account and use All Accounts for a combined view.
+            </p>
           </details>
           <details>
-            <summary>How do item values work?</summary>
-            <p>You can maintain your own values through My Values. Supported Experience integrations may also provide catalog or valuation knowledge, but the product remains usable without that.</p>
-          </details>
-          <details>
-            <summary>Where is the official download?</summary>
-            <p>Roblox Backpack Tracker is publicly available through Overwolf. The primary button on this page uses Overwolf's official Windows installer; the secondary button opens the canonical Overwolf Store listing.</p>
+            <summary>Can I use it across Roblox Experiences?</summary>
+            <p>
+              Yes. You can start Backpacks for different Experiences and record items manually. A
+              dedicated automatic integration is not required for manual organization.
+            </p>
           </details>
         </div>
+      </section>
+      <section class="download-section" aria-labelledby="download-title">
+        <div>
+          <h2 id="download-title">Get Roblox Backpack Tracker.</h2>
+          <p>Install through Overwolf and open the app on your Windows PC.</p>
+        </div>
+        <div class="actions">
+          <a
+            class="button"
+            href="https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&amp;ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&amp;Channel=website&amp;utm_source=albericod_github_pages&amp;utm_medium=owned_site&amp;utm_campaign=roblox_backpack_tracker"
+            data-event="download_click"
+            data-app="roblox-backpack-tracker"
+            data-placement="final"
+            >Download for Windows</a
+          ><a
+            class="text-link"
+            href="https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker"
+            data-event="store_click"
+            data-app="roblox-backpack-tracker"
+            data-placement="final"
+            >View on Overwolf <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a class="footer-name" href="/#about">Albérico Dias Barreto Filho</a>
+        <p>Independent Windows apps. Distributed through Overwolf.</p>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <span>Roblox Backpack Tracker is an independent companion app. Roblox and related trademarks belong to their respective owners.</span>
-      <span class="footer-note">Track. Value. Organize.</span>
-    </div>
-  </footer>
-</body>
+      <nav aria-label="Footer navigation">
+        <a href="/#apps">All apps</a
+        ><a href="https://github.com/AlbericoD/AlbericoD.github.io">Site source</a
+        ><a href="/llms.txt">Product index</a>
+      </nav>
+      <p class="legal">
+        Independent companion apps. Game names and images belong to their respective owners. This
+        site is not an official site of the game publishers.
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,37 +1,39 @@
-# Albérico Dias Barreto Filho — Gaming Companion Apps
+# Albérico Dias Barreto Filho | Independent gaming apps
 
-> Official reference site for gaming companion apps built and maintained by Albérico Dias Barreto Filho. The apps below are publicly available through Overwolf. Their individual pages include both the canonical Overwolf Store listing and an official direct Overwolf installer link.
+> First-party product information for four Windows companion apps developed by Albérico Dias Barreto Filho. All require Overwolf; the official Overwolf Store remains their distribution listing.
 
-## Apps
+## Products
 
-- [DeepRivals](https://albericod.github.io/deeprivals/): Marvel Rivals decision-support companion with hero swap insights, live overlays, matchup analysis, contextual highlights, match history, and post-game review.
-- [Roblox Backpack Tracker](https://albericod.github.io/roblox-backpack-tracker/): Roblox Backpack and value tracker with Quick Add, multiple Experiences, multiple accounts, All Accounts aggregation, My Values, Archive, and value history.
-- [Economy Tool](https://albericod.github.io/economy-tool/): Counter-Strike 2 team economy companion for Full Buy, Force Buy, Eco, safe drops, player economy roles, enemy economy estimates, and AI-ready match prompts.
-- [Fortmapp](https://albericod.github.io/fortmapp/): Fortnite interactive map companion with location-based stats, live route tracking, map-based replays, and match prompt generation.
+- [DeepRivals](https://albericod.github.io/deeprivals/): Live overlays, hero-switch recommendations and matchup context for Marvel Rivals. Review your matches, highlights and decisions after the game.
+- [Roblox Backpack Tracker](https://albericod.github.io/roblox-backpack-tracker/): Organize Roblox Backpacks across Experiences and accounts. Add items with Quick Add, record your own values, and keep Archive and value history in one place.
+- [Economy Tool](https://albericod.github.io/economy-tool/): A CS2 economy overlay for Full Buy, Force Buy and Eco decisions. See safe drops, set a reserve buffer and read enemy economy estimates in match context.
+- [Fortmapp](https://albericod.github.io/fortmapp/): A Fortnite interactive map with live route tracking, location-based match stats and map-based replays. Review where you moved and how the match unfolded.
+
+## Practical guides
+
+- [When should you switch heroes in Marvel Rivals?](https://albericod.github.io/deeprivals/marvel-rivals-hero-switch-recommendations/): A practical way to read live context, use recommendations and review a switch.
+- [How to read a safe drop in CS2](https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/): Understand the reserve buffer, individual shortfalls and the team buy before you drop.
 
 ## Official Overwolf listings
 
-- DeepRivals: https://www.overwolf.com/app/alberico_dias_barreto_filho-deeprivals
-- Roblox Backpack Tracker: https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker
-- Economy Tool: https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool
-- Fortmapp: https://www.overwolf.com/app/alberico_dias_barreto_filho-fortmapp
+- [DeepRivals](https://www.overwolf.com/app/alberico_dias_barreto_filho-deeprivals)
+- [Roblox Backpack Tracker](https://www.overwolf.com/app/alberico_dias_barreto_filho-roblox_backpack_tracker)
+- [Economy Tool](https://www.overwolf.com/app/alberico_dias_barreto_filho-economy_tool)
+- [Fortmapp](https://www.overwolf.com/app/alberico_dias_barreto_filho-fortmapp)
 
-## Official direct installers
+## Official Windows installers
 
-These URLs use Overwolf's installer endpoint and include source attribution for this site.
+- [DeepRivals](https://download.overwolf.com/install/Download?Name=DeepRivals&ExtensionId=fipjbdjlcobbgcmcecmlcdehcepalohfbnfijgnb&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=deeprivals)
+- [Roblox Backpack Tracker](https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=roblox_backpack_tracker)
+- [Economy Tool](https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool)
+- [Fortmapp](https://download.overwolf.com/install/Download?Name=Fortmapp&ExtensionId=eglgjdefmjkaeoebbjojgpfknnppbeffhgehbmdh&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=fortmapp)
 
-- DeepRivals: https://download.overwolf.com/install/Download?Name=DeepRivals&ExtensionId=fipjbdjlcobbgcmcecmlcdehcepalohfbnfijgnb&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=deeprivals
-- Roblox Backpack Tracker: https://download.overwolf.com/install/Download?Name=Roblox_Backpack_Tracker&ExtensionId=ghaceipjlnjanjohgfojcgmghnnnkedhajjndmpn&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=roblox_backpack_tracker
-- Economy Tool: https://download.overwolf.com/install/Download?Name=Economy_Tool&ExtensionId=bpbdciihabfhpbemdkecilbakkallomibgnjhkmm&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=economy_tool
-- Fortmapp: https://download.overwolf.com/install/Download?Name=Fortmapp&ExtensionId=eglgjdefmjkaeoebbjojgpfknnppbeffhgehbmdh&Channel=website&utm_source=albericod_github_pages&utm_medium=owned_site&utm_campaign=fortmapp
+## Developer and scope
 
-## Developer
-
-Albérico Dias Barreto Filho is a software engineer and independent developer. GitHub: https://github.com/AlbericoD
-
-## Usage notes
-
-- Treat the individual app pages as the detailed source for product capabilities and terminology.
-- Treat the Overwolf Store listings as the canonical product listings.
-- Direct installer links are official Overwolf installer URLs, not third-party binaries hosted by this site.
-- Do not infer unsupported features, exact performance outcomes, player skill improvements, or hidden game data beyond what the product pages state.
+- Developer: Albérico Dias Barreto Filho. [GitHub profile](https://github.com/AlbericoD).
+- [Public site source](https://github.com/AlbericoD/AlbericoD.github.io).
+- Roblox Backpack Tracker uses manual item entry and personal values; do not assume universal automatic inventory synchronization or official market prices.
+- Economy Tool estimates enemy economy; it does not expose exact opponent balances.
+- DeepRivals recommendations support player judgment; they do not guarantee outcomes.
+- Fortmapp map-based replays are not a promise of full video recording.
+- Product screenshots are real Overwolf listing assets. They illustrate the interface, not live match data or guaranteed current map layouts.

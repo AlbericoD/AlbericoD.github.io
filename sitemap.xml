@@ -2,32 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://albericod.github.io/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-07</lastmod>
   </url>
   <url>
     <loc>https://albericod.github.io/deeprivals/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-07</lastmod>
   </url>
   <url>
     <loc>https://albericod.github.io/roblox-backpack-tracker/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-07</lastmod>
   </url>
   <url>
     <loc>https://albericod.github.io/economy-tool/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-07</lastmod>
   </url>
   <url>
     <loc>https://albericod.github.io/fortmapp/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://albericod.github.io/deeprivals/marvel-rivals-hero-switch-recommendations/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://albericod.github.io/economy-tool/cs2-safe-drop-calculator/</loc>
+    <lastmod>2026-09-07</lastmod>
   </url>
 </urlset>
