@@ -114,14 +114,21 @@
     const detail = event.detail;
     if (!detail?.event) return;
 
-    posthog.capture(detail.event, {
-      site_surface: SITE_SURFACE,
-      app_slug: detail.app_slug,
-      placement: detail.placement,
-      page_path: detail.page_path,
-      page_type: currentPageType(),
-      link_url: detail.link_url,
-    });
+    posthog.capture(
+      detail.event,
+      {
+        site_surface: SITE_SURFACE,
+        app_slug: detail.app_slug,
+        placement: detail.placement,
+        page_path: detail.page_path,
+        page_type: currentPageType(),
+        link_url: detail.link_url,
+      },
+      {
+        transport: 'sendBeacon',
+        send_instantly: true,
+      }
+    );
   });
 
   document.addEventListener('click', (event) => {
