@@ -2,12 +2,13 @@
  * - Uses the existing PostHog project with a dedicated `site_surface` property.
  * - Captures one manual $pageview per page plus explicit download/store clicks.
  * - Does not enable autocapture, session replay, surveys, or user identification.
- * - Preserves installer URLs and never delays navigation.
+ * - Sends external-link conversions directly to PostHog so navigation cannot drop them.
  */
 (() => {
   const POSTHOG_TOKEN = 'phc_nNggHUKxUudbRaEtLNcwqXcq4NgtM6CBTdiqgDZ7hFaq';
   const POSTHOG_HOST = 'https://us.i.posthog.com';
   const SITE_SURFACE = 'albericod_github_pages';
+  const VISITOR_STORAGE_KEY = 'albericod_site_visitor_id';
 
   function installPostHogStub() {
     const existing = window.posthog;
@@ -64,6 +65,24 @@
     return posthog;
   }
 
+  function createVisitorId() {
+    if (globalThis.crypto?.randomUUID) return globalThis.crypto.randomUUID();
+    return `anon-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+  }
+
+  function getOrCreateVisitorId() {
+    try {
+      const existing = localStorage.getItem(VISITOR_STORAGE_KEY);
+      if (existing) return existing;
+
+      const created = createVisitorId();
+      localStorage.setItem(VISITOR_STORAGE_KEY, created);
+      return created;
+    } catch {
+      return createVisitorId();
+    }
+  }
+
   function currentAppSlug() {
     const match = location.pathname.match(
       /^\/(deeprivals|roblox-backpack-tracker|economy-tool|fortmapp)(?:\/|$)/
@@ -82,6 +101,7 @@
     return 'product';
   }
 
+  const visitorId = getOrCreateVisitorId();
   const posthog = installPostHogStub();
   posthog.init(POSTHOG_TOKEN, {
     api_host: POSTHOG_HOST,
@@ -98,10 +118,15 @@
     persistence_name: 'albericod_site_posthog',
     person_profiles: 'identified_only',
     ip: false,
+    bootstrap: {
+      distinctID: visitorId,
+      isIdentifiedID: false,
+    },
   });
 
   const pageProperties = {
     site_surface: SITE_SURFACE,
+    site_visitor_id: visitorId,
     page_path: location.pathname,
     page_type: currentPageType(),
   };
@@ -110,25 +135,59 @@
 
   posthog.capture('$pageview', pageProperties);
 
+  function directCapture(eventName, properties) {
+    const distinctId =
+      typeof posthog.get_distinct_id === 'function' ? posthog.get_distinct_id() : visitorId;
+    const payload = JSON.stringify({
+      api_key: POSTHOG_TOKEN,
+      event: eventName,
+      distinct_id: distinctId,
+      properties: {
+        ...properties,
+        site_visitor_id: visitorId,
+        $process_person_profile: false,
+        $geoip_disable: true,
+        $current_url: location.href,
+        $host: location.host,
+        $pathname: location.pathname,
+        $referrer: document.referrer || undefined,
+      },
+    });
+    const endpoint = `${POSTHOG_HOST}/i/v0/e/`;
+
+    try {
+      if (navigator.sendBeacon) {
+        const queued = navigator.sendBeacon(
+          endpoint,
+          new Blob([payload], { type: 'text/plain' })
+        );
+        if (queued) return;
+      }
+    } catch {
+      // Fall through to a keepalive request when beacon is unavailable or rejected.
+    }
+
+    fetch(endpoint, {
+      method: 'POST',
+      body: payload,
+      headers: { 'Content-Type': 'text/plain' },
+      keepalive: true,
+      mode: 'cors',
+    }).catch(() => {});
+  }
+
   window.addEventListener('site:conversion', (event) => {
     const detail = event.detail;
     if (!detail?.event) return;
 
-    posthog.capture(
-      detail.event,
-      {
-        site_surface: SITE_SURFACE,
-        app_slug: detail.app_slug,
-        placement: detail.placement,
-        page_path: detail.page_path,
-        page_type: currentPageType(),
-        link_url: detail.link_url,
-      },
-      {
-        transport: 'sendBeacon',
-        send_instantly: true,
-      }
-    );
+    directCapture(detail.event, {
+      site_surface: SITE_SURFACE,
+      app_slug: detail.app_slug,
+      placement: detail.placement,
+      page_path: detail.page_path,
+      page_type: currentPageType(),
+      link_url: detail.link_url,
+    });
   });
 
   document.addEventListener('click', (event) => {
